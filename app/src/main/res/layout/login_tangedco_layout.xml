@@ -7,31 +7,91 @@
     android:background="@drawable/fundo2_editado2"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="20"
     tools:context=".Login_TangedcoActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_bolt" />
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/baseline_bolt"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="TANGDECO"
         android:textColor="#FFFDFD"
-        android:textSize="30sp"
+        android:textSize="45sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="0.5dp"
         android:src="@drawable/baseline_bolt" />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/linha"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/personIC" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:fontFamily="sans-serif-thin"
+            android:textColorHint="#72F3F2F2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/lockIC" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:hint="Password"
+            android:textColorHint="#72F3F2F2" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00973737"
+        android:text="Forgot your Password?"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/linhaq"
+            android:text="Sign in"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-thin"
+            android:layout_height="55dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
